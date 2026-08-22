@@ -71,49 +71,74 @@
 
 ---
 
-## 📱 Подготовка телефона (ВАЖНО!)
+## 📱 Подготовка аккаунта для gplaydl (ВАЖНО!)
 
-Для работы программы необходимо настроить **gplaydl** с вашим аккаунтом Google.
+Для работы программы необходимо авторизовать `gplaydl` с вашим аккаунтом Google. Это делается через официальный сервис аутентификации `gplaydl`.
 
-### Шаг 1: Установите Google Authenticator на телефон
+### Шаг 1: Перейдите на сайт аутентификации gplaydl
 
-1. Откройте **Play Market** или **App Store** на телефоне
-2. Установите приложение **Google Authenticator**:
-   - [Ссылка на Google Play](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
-   - [Ссылка на App Store](https://apps.apple.com/app/google-authenticator/id388497605)
+Откройте в браузере на компьютере или телефоне:
+👉 **[https://dispenser.gplaydl.com/](https://dispenser.gplaydl.com/)**
 
-### Шаг 2: Включите двухфакторную аутентификацию (2FA)
+Это официальный сервис для авторизации `gplaydl`.
 
-1. Откройте браузер на компьютере и перейдите на страницу управления аккаунтом Google:
-   - **https://myaccount.google.com/security**
-2. В разделе **"Вход в Google"** нажмите **"Двухэтапная аутентификация"**
-3. Включите двухэтапную аутентификацию
-4. Выберите способ **"Google Authenticator"**
-5. Отсканируйте QR-код через приложение на телефоне
-6. Введите код из приложения для подтверждения
+### Шаг 2: Войдите в свой аккаунт Google
 
-### Шаг 3: Создайте пароль приложения для gplaydl
+1. На сайте нажмите **"Sign in with Google"**
+2. Выберите аккаунт Google, который хотите использовать
+3. Подтвердите вход
 
-1. Перейдите на страницу создания паролей приложений:
-   - **https://myaccount.google.com/apppasswords**
-2. В поле **"Название"** введите: `gplaydl`
-3. Нажмите **"Создать"**
-4. **Скопируйте сгенерированный пароль** (выглядит как `xxxx xxxx xxxx xxxx`)
-5. Сохраните его в безопасном месте (понадобится для настройки)
+### Шаг 3: Получите токен
 
----
+1. После входа, на странице будет отображен ваш **персональный токен** (длинная строка символов)
+2. **Скопируйте этот токен** и сохраните в безопасном месте
 
-## 🚀 Quick Start
+> ⚠️ **Важно!** Токен дает доступ к вашему аккаунту через `gplaydl`. Не передавайте его третьим лицам.
 
-### Option 1: Download Ready .exe (Windows)
+### Шаг 4: Привяжите токен в gplaydl
 
-1. Go to [Releases](https://github.com/Maximka1993271/APK-Downloader-Pro/releases)
-2. Download `APK_Downloader_Pro.exe`
-3. Run and enjoy! 🎉
-
-### Option 2: Run from Source Code
+Теперь, когда у вас есть токен, привяжите его к `gplaydl` на вашем компьютере:
 
 ```bash
+gplaydl link
+
+Во время выполнения команды:
+
+Вас попросят ввести токен — вставьте скопированный токен
+
+Нажмите Enter
+
+После успешной привязки, программа сможет скачивать APK! ✅
+
+🔄 Если нужно обновить токен
+Токен может быть отозван или истечь. В этом случае:
+
+Снова зайдите на dispenser.gplaydl.com
+
+Получите новый токен
+
+Выполните gplaydl link и введите новый токен
+
+📋 Полный чек-лист для новичков
+Чтобы программа заработала:
+
+□ Установлен Python 3.8+
+□ Установлен gplaydl (pip install gplaydl)
+□ Зарегистрирован аккаунт Google
+□ Получен токен на dispenser.gplaydl.com
+□ Выполнена команда gplaydl link с введенным токеном
+После выполнения всех пунктов, можете запускать APK Downloader Pro и скачивать приложения! 🚀
+
+🚀 Quick Start
+Option 1: Download Ready .exe (Windows)
+Go to Releases
+
+Download APK_Downloader_Pro.exe
+
+Run and enjoy! 🎉
+
+Option 2: Run from Source Code
+bash
 # Clone the repository
 git clone https://github.com/Maximka1993271/APK-Downloader-Pro.git
 cd APK-Downloader-Pro
@@ -129,52 +154,72 @@ Python 3.8 or higher
 
 gplaydl for APK downloading:
 
+bash
 pip install gplaydl
-
 🔑 Настройка gplaydl (ВАЖНО!)
 После установки gplaydl, нужно привязать аккаунт Google:
-gplaydl link
 
+bash
+gplaydl link
 Во время выполнения команды:
 
-Введите ваш email Google
+Введите ваш токен с dispenser.gplaydl.com
 
-Введите пароль приложения (который создали на шаге 3)
-
-Если запросит код подтверждения — введите код из Google Authenticator на телефоне
+Нажмите Enter
 
 После успешной привязки, программа сможет скачивать APK! ✅
 
 🎯 How to Use
 1. Вставьте ссылку на приложение из Google Play
-
+text
 https://play.google.com/store/apps/details?id=com.example.app
-
 Или просто укажите Package ID: com.example.app
 
 2. Нажмите "📥 Скачать APK"
 3. Выберите место сохранения файла
 4. Дождитесь завершения загрузки ✅
+✨ Features
+Feature	Description
+📥 APK Download	Direct download from Google Play
+🌍 3 Languages	Русский, Українська, English
+🎨 3 Themes	Light, Dark, System (auto-sync with OS)
+✨ Neon Animation	Modern glowing interface with color cycling
+🔒 Signature Check	APK verification via apksigner (optional)
+💾 Settings Save	Saved to user's AppData folder
+⚡ Async Download	Non-blocking interface
+📂 Save Dialog	Choose where to save APK file
+⌨️ Context Menu	Copy/Paste/Cut/Clear for URL field
+🔗 Package ID Input	Support for direct package ID input
+🖥️ Cross-Platform	Windows, Linux, macOS
+📊 Progress Bar	Real-time download progress
+🐛 v1.2.1 Features
+✅ Full localization: Russian, Ukrainian, English
 
-📱 Полная инструкция для новичков
-Что нужно для работы?
-Телефон с установленным Google Authenticator
+✅ Three themes: Light, Dark, System
 
-Включенная двухфакторная аутентификация в аккаунте Google
+✅ Neon animation with color cycling
 
-Пароль приложения для gplaydl
+✅ APK signature verification (via apksigner)
 
-Установленный Python 3.8+ (если запускаете из исходников)
+✅ Settings saved to user's AppData folder
 
-Пошаговая инструкция:
-На телефоне: Установить Google Authenticator
+✅ Proper error handling and user feedback
 
-В браузере: Включить 2FA и создать пароль приложения
+✅ Asynchronous download without UI freezing
 
-На компьютере: Установить gplaydl и выполнить gplaydl link
+✅ Context menu for URL field (copy/paste/cut/clear)
 
-Запустить программу и начать скачивать APK!
+✅ Progress bar with real-time updates
 
+✅ GitHub profile link in footer
+
+🔒 Privacy
+All processing is performed locally on your machine.
+No advertisements, tracking, telemetry, analytics or user data collection.
+Your privacy is 100% protected.
+
+📸 Screenshots
+<div align="center"> <table> <tr> <td align="center"> <img src="Screenshots/light_theme.png" alt="Light Theme" width="400"/> <br/> <b>☀️ Light Theme</b> </td> <td align="center"> <img src="Screenshots/dark_theme.png" alt="Dark Theme" width="400"/> <br/> <b>🌙 Dark Theme</b> </td> </tr> </table> </div>
 ⌨️ Keyboard Shortcuts
 Shortcut	Action
 Enter	Start download (in URL field)
@@ -187,75 +232,3 @@ pip install pyinstaller
 
 # Create EXE
 pyinstaller --onefile --windowed --name=APK_Downloader_Pro apk_downloader.py
-🤝 How to Contribute
-Fork the repository
-
-Create a branch: git checkout -b feature/amazing-feature
-
-Commit: git commit -m 'Add amazing feature'
-
-Push: git push origin feature/amazing-feature
-
-Open a Pull Request
-
-❓ FAQ
-Q: Почему gplaydl не найден?
-A: Установите: pip install gplaydl
-
-Q: gplaydl выдает ошибку "not linked"?
-A: Выполните: gplaydl link и введите данные аккаунта
-
-Q: Что такое пароль приложения и где его взять?
-A: Перейдите на https://myaccount.google.com/apppasswords → создайте пароль для gplaydl
-
-Q: Обязательно ли включать 2FA?
-A: Да, без двухфакторной аутентификации gplaydl не сможет работать
-
-Q: Безопасно ли это?
-A: Да! Пароль приложения работает только для gplaydl и не дает доступа к другим сервисам Google
-
-Q: Как обновить программу?
-A: Скачайте новую версию из Releases
-
-Q: Работает ли на macOS/Linux?
-A: Да! Просто запустите из исходного кода.
-
-📄 License
-Distributed under the MIT License. See LICENSE for details.
-
-👤 Author
-Maxim Melnikov
-
-GitHub: @Maximka1993271
-
-⭐ Support
-If you like this project, give it a ⭐ on GitHub!
-
-<p align="center"> <b>Made with ❤️</b><br/> <b>Maxim Melnikov</b> — <a href="https://github.com/Maximka1993271">@Maximka1993271</a> </p><p align="center"> <sub>APK Downloader Pro v1.2.1 — 22 August 2026</sub><br/> <sub>🔓 Open Source — fully open source code</sub> </p> ```
-📝 Что добавлено:
-✅ Раздел "Подготовка телефона" — пошаговая инструкция
-
-✅ Установка Google Authenticator — ссылки на Play Market и App Store
-
-✅ Включение 2FA — подробное руководство
-
-✅ Создание пароля приложения — инструкция со скриншотами
-
-✅ Настройка gplaydl — команда gplaydl link
-
-✅ Полная инструкция для новичков — от начала до конца
-
-✅ Обновленный FAQ — ответы на частые вопросы
-
-💡 Важно!
-Пользователям нужно будет:
-
-✅ Установить Google Authenticator на телефон
-
-✅ Включить двухфакторную аутентификацию
-
-✅ Создать пароль приложения
-
-✅ Выполнить gplaydl link
-
-Без этих шагов программа не сможет скачивать APK!
