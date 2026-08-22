@@ -70,6 +70,23 @@
 
 ---
 
+## ⚠️ Важное предупреждение / Important Warning
+
+> **🚨 ВНИМАНИЕ! / WARNING!**
+
+**🇷🇺 На русском:**
+> Данный проект использует **неофициальный доступ к Google Play**. Google может пометить, заблокировать или ограничить аккаунты, используемые с этим инструментом. Пожалуйста, используйте отдельный аккаунт и продолжайте использование на свой страх и риск.
+
+**🇬🇧 In English:**
+> This project uses **unofficial Google Play access**. Google may flag, lock, or restrict accounts used with it. Please use a separate account and continue at your own risk.
+
+**⚠️ Рекомендации / Recommendations:**
+- Создайте **отдельный Google аккаунт** для использования с gplaydl / Create a **separate Google account** for use with gplaydl
+- Не используйте основной аккаунт / Do not use your main account
+- Автор не несет ответственности за блокировки / Author is not responsible for any bans
+
+---
+
 ## ⭐ Project Highlights
 
 - ✅ **Free & Open Source** — MIT License
@@ -110,6 +127,8 @@
 1. Нажмите **"Sign in with Google"**
 2. Выберите аккаунт, с которого хотите скачивать APK
 3. Подтвердите вход
+
+> ⚠️ **Рекомендация:** Используйте **отдельный Google аккаунт**, не основной!
 
 ### Шаг 3: Скопируйте токен
 
