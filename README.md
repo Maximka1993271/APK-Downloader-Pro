@@ -25,14 +25,29 @@
 </p>
 
 <p align="center">
-  <img src="Screenshots/light_theme.png" alt="APK Downloader Pro Light Theme" width="600"/>
-</p>
-
-<p align="center">
   <b>🚀 Удобный desktop-клиент для загрузки APK-файлов напрямую из Google Play</b><br/>
   Просто, быстро и безопасно. Поддержка русского, украинского и английского языков.<br/>
   <b>🔓 Free • Open Source • Privacy First • Cross-Platform</b>
 </p>
+
+---
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Screenshots/light_theme.png" alt="Light Theme" width="450"/>
+        <br/>
+        <b>☀️ Light Theme</b>
+      </td>
+      <td align="center">
+        <img src="Screenshots/dark_theme.png" alt="Dark Theme" width="450"/>
+        <br/>
+        <b>🌙 Dark Theme</b>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
