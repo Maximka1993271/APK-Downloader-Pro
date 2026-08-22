@@ -148,7 +148,6 @@ pip install -r requirements.txt
 
 # Run the application
 python apk_downloader.py
-
 📋 Requirements
 Python 3.8 or higher
 
